@@ -1,24 +1,30 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
-{
-char ak[15];
-int i;
-int j=0;
-int count=5;
+int main()
+{char a[4];
+  int b[4];
+  int i,j;
 
-while(j<5)
+//clrscr();
+printf("plz enter the value=");
+scanf("%s",a);
+for(i=3;i>=0;i--)
 {
-   printf("enter character=");
-   scanf("%c",&ak[j]);
-        //  printf("value is %c\n",ak[j]);
-        j++;
-      }
-for(i=0;i<5;i++)
-  {
-     printf("string is %c\n",ak[i]);
-  }
-  getch();
+//printf("%c\n",a[i]);
+b[i]=a[i];
+b[i]=b[i]-65;
+printf("%d",b[i]);
+}
 
+/*for(j=0;j<4;j++)
+{
+  printf("#d\n",b[j]);
+}*/
+
+
+
+
+getch();
+return 0;
 
 }
